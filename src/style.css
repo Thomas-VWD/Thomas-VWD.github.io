@@ -43,7 +43,8 @@
   --desk-sz-h3: 1.2em;
   --mob-sz-h3: 1em;
   --desk-sz-text: 1em;
-  --mob-sz-text: 0.8em;
+  --mob-sz-text: 1em;
+  --h-color: #babaf5;
 }
 
 .cvBox {
@@ -160,7 +161,7 @@
 
 h1 {
   font-size: var(--desk-sz-h1);
-  background-color: #9a9ae1;
+  background-color: var(--h-color);
 }
 
 h2 {
@@ -194,6 +195,9 @@ a:active {
     text-align: center;
     background-image: var(--section-grad);
   }
+  .sideSection > div {
+    padding-left: 0;
+  }
   .listInterest {
     display: flex;
     flex-direction: column;
@@ -222,5 +226,11 @@ a:active {
   ul,
   li {
     font-size: var(--mob-sz-text);
+  }
+}
+@media (max-width: 1280px) {
+  .contactLiRows {
+    display: flex;
+    flex-direction: column;
   }
 }
