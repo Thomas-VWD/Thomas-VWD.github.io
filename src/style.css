@@ -210,6 +210,9 @@ a:active {
     display: flex;
     flex-direction: column;
   }
+  .mail {
+    word-wrap: break-word;
+  }
   h1 {
     font-size: var(--mob-sz-h1);
   }
@@ -232,5 +235,10 @@ a:active {
   .contactLiRows {
     display: flex;
     flex-direction: column;
+  }
+  .sideSection > div {
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 }
