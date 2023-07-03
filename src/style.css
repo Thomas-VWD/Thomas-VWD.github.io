@@ -1,0 +1,205 @@
+:root {
+  --border-gradient: linear-gradient(
+      to left bottom,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1
+    )
+    1;
+  --linear-grad-left: linear-gradient(
+    to right,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  --background-color: #f5f3f4;
+  --section-grad-mobile: linear-gradient(to bottom, #dee2e6, #ffff);
+  --section-bkgrnd: #dee2e6;
+  --text-color-contact: white;
+  --background-contact: #2f3e5a;
+  --text-color-primary: #3d99ec;
+}
+
+.cvBox {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 75% 25%;
+  gap: 10px 20px;
+  grid-template-areas:
+    "principalSection sideSection"
+    "bottomSection bottomSection";
+  background-color: var(--background-color);
+}
+
+.linear-gradient {
+  border-style: solid;
+  border-width: 2em;
+  border-image: var(--border-gradient);
+}
+
+.principalSection {
+  grid-area: principalSection;
+}
+
+.texteGradien {
+  color: var(--text-color-primary);
+}
+
+.sideSection {
+  grid-area: sideSection;
+  background-color: var(--section-bkgrnd);
+}
+
+.sideSection > div {
+  padding-left: 1em;
+}
+
+.contact {
+  color: var(--text-color-contact);
+  background-color: var(--background-contact);
+  margin-top: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.contact a {
+  color: var(--text-color-contact);
+}
+
+.contact > ul > li {
+  padding-bottom: 0.5em;
+}
+
+.presentiel li {
+  padding-top: 0.5em;
+}
+
+.contactLiRows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 1em;
+}
+
+.contactLiRows li {
+  padding-top: 0.5em;
+}
+
+.linkedin:hover {
+  transform: translateY(-5px);
+}
+
+.linkedin:active {
+  transform: translate(5px);
+}
+
+.github:hover {
+  transform: translateY(-5px);
+}
+
+.github:active {
+  transform: translate(5px);
+}
+
+.bottomSection {
+  grid-area: bottomSection;
+  text-align: center;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+}
+
+.listInterest {
+  display: flex;
+  justify-content: space-around;
+}
+
+.listInterest > li {
+  height: 100%;
+}
+
+.strava:hover {
+  transform: translateY(-5px);
+}
+
+.strava:active {
+  transform: translate(5px);
+}
+
+h1 {
+  font-size: 2em;
+  background-color: #9a9ae1;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p,
+ul,
+li {
+  font-size: 1em;
+}
+
+a:hover {
+  color: #c777b9;
+}
+
+a:active {
+  color: #41dfff;
+}
+
+@media (max-width: 600px) {
+  .cvBox {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: var(--section-grad);
+  }
+
+  .listInterest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .contactLiRows {
+    display: flex;
+    flex-direction: column;
+  }
+}

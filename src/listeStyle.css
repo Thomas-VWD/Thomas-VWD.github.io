@@ -1,0 +1,70 @@
+/*
+list Style "contact" here
+*/
+.mail {
+  list-style-image: url(../assets/e-mail.svg);
+}
+.phone {
+  list-style-image: url(../assets/mobile-phone.svg);
+}
+.house {
+  list-style-image: url(../assets/house.svg);
+}
+.licence {
+  list-style-image: url(../assets/icons8-show-permit-card-16.png);
+}
+.car {
+  list-style-image: url(../assets/icons8-voiture-16.png);
+}
+.workPlaces {
+  list-style-image: url(../assets/icons8-emplacement-off-16.png);
+}
+.remote {
+  list-style-image: url(../assets/icons8-remote-desktop-16.png);
+}
+/*
+list style side section
+*/
+.savoirPlus {
+  display: flex;
+  gap: 2em;
+}
+.html {
+  list-style-image: url(../assets/html\(1\).png);
+}
+.css {
+  list-style-image: url(../assets/css-3.png);
+}
+.js {
+  list-style-image: url(../assets/js.png);
+}
+.node {
+  list-style-image: url(../assets/file-type-node.svg);
+}
+.sql {
+  list-style-image: url(../assets/serveur-sql.png);
+}
+.ex {
+  list-style-image: url(../assets/express.svg);
+}
+.react {
+  list-style-image: url(../assets/react.svg);
+}
+.git {
+  list-style-image: url(../assets/gite.png);
+}
+/*
+list style bottom section
+*/
+.listInterest li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+@media (max-width: 600px) {
+  .savoirPlus {
+    justify-content: center;
+  }
+}
