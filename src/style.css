@@ -46,7 +46,6 @@
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 75% 25%;
   gap: 10px 20px;
   grid-template-areas:
     "principalSection sideSection"
