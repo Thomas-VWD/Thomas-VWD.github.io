@@ -36,6 +36,14 @@
   --text-color-contact: white;
   --background-contact: #2f3e5a;
   --text-color-primary: #3d99ec;
+  --desk-sz-h1: 2em;
+  --mob-sz-h1: 1.5em;
+  --desk-sz-h2: 1.6em;
+  --mob-sz-h2: 1.3em;
+  --desk-sz-h3: 1.2em;
+  --mob-sz-h3: 1em;
+  --desk-sz-text: 1em;
+  --mob-sz-text: 0.8em;
 }
 
 .cvBox {
@@ -151,28 +159,27 @@
 }
 
 h1 {
-  font-size: 2em;
+  font-size: var(--desk-sz-h1);
   background-color: #9a9ae1;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: var(--desk-sz-h2);
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: var(--desk-sz-h3);
 }
 
 p,
 ul,
 li {
-  font-size: 1em;
+  font-size: var(--desk-sz-text);
 }
 
 a:hover {
   color: #c777b9;
 }
-
 a:active {
   color: #41dfff;
 }
@@ -187,7 +194,6 @@ a:active {
     text-align: center;
     background-image: var(--section-grad);
   }
-
   .listInterest {
     display: flex;
     flex-direction: column;
@@ -196,9 +202,25 @@ a:active {
     padding-left: 25%;
     padding-right: 25%;
   }
-
   .contactLiRows {
     display: flex;
     flex-direction: column;
+  }
+  h1 {
+    font-size: var(--mob-sz-h1);
+  }
+
+  h2 {
+    font-size: var(--mob-sz-h2);
+  }
+
+  h3 {
+    font-size: var(--mob-sz-h3);
+  }
+
+  p,
+  ul,
+  li {
+    font-size: var(--mob-sz-text);
   }
 }
